@@ -24,8 +24,10 @@ public class TarifResource {
     var cache = cacheManager.createCache("cache", configurationBuilder.build());
 
     var model = new TestModel();
-
+    model.id = 1;
     cache.put("Hello", model);
+
+    var queriedModel = cache.query("from cache.TestModel where id=1");
     return Response.ok().build();
   }
 }
