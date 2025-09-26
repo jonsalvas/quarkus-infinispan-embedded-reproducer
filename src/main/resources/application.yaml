@@ -1,0 +1,5 @@
+quarkus:
+  log:
+    level: ERROR
+  http:
+    port: 8081
