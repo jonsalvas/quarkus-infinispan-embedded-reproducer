@@ -3,3 +3,5 @@ quarkus:
     level: ERROR
   http:
     port: 8081
+  infinispan-embedded:
+    xml-config: caches.xml

@@ -1,0 +1,12 @@
+<infinispan>
+   <cache-container name="default" statistics="true">
+      <local-cache name="queryCache">
+          <indexing enabled="true"
+                    storage="local-heap">
+              <indexed-entities>
+                  <indexed-entity>com.example.TestModel</indexed-entity>
+              </indexed-entities>
+          </indexing>
+      </local-cache>
+   </cache-container>
+</infinispan>
