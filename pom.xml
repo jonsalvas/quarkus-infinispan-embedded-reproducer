@@ -31,21 +31,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.infinispan.protostream</groupId>
-                <artifactId>protostream</artifactId>
-                <version>6.0.0.Dev13</version>
-            </dependency>
-            <dependency>
-                <groupId>org.infinispan.protostream</groupId>
-                <artifactId>protostream-processor</artifactId>
-                <version>6.0.0.Dev13</version>
-            </dependency>
-            <dependency>
-                <groupId>org.infinispan.protostream</groupId>
-                <artifactId>protostream-types</artifactId>
-                <version>6.0.0.Dev13</version>
-            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
@@ -77,29 +63,10 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-core</artifactId>
-            <version>16.0.0.Dev04</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-query</artifactId>
-            <version>16.0.0.Dev04</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-api</artifactId>
-            <version>16.0.0.Dev04</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-commons</artifactId>
-            <version>16.0.0.Dev04</version>
+            <groupId>io.quarkiverse.infinispan</groupId>
+            <artifactId>quarkus-infinispan-embedded</artifactId>
+            <version>999-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -192,14 +159,6 @@
                     <source>17</source> <!-- oder deine Java Version -->
                     <target>17</target>
                     <parameters>true</parameters>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.infinispan.protostream</groupId>
-                            <artifactId>protostream-processor</artifactId>
-                            <version>6.0.0.Dev13</version>
-
-                        </path>
-                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>
